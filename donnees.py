@@ -41,7 +41,7 @@ Affiche les problemes eventuels avant de renvoyer la liste triee.
 # TODO : appeler charger_articles(), puis verifier_articles(),
 # afficher chaque probleme avec print(), puis renvoyer
 # les articles tries avec trier_par_date()
-    articles =  charger_articles(chemin="articles.csv")
+    articles =  charger_articles(chemin)
     problemes = verifier_articles(articles)
     for probleme in problemes:
         print(probleme)

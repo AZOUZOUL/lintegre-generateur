@@ -162,8 +162,8 @@ au format 2026-03-05.
 # puis passe-la à sorted(..., key=ta_fonction, reverse=True).
 # Les dates au format AAAA-MM-JJ se trient correctement comme du texte.
 
-    def ma_fonction(articles):
-        return articles["date"]
+    def ma_fonction(article):
+        return article["date"]
     
     return sorted(articles, key=ma_fonction, reverse=True)
 
