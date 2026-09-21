@@ -1,0 +1,220 @@
+/* ===== 1. Bases ===== */
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+body { 
+    font-family: Arial, Helvetica, sans-serif; 
+    color: #222222; 
+    background-color: #F7F7F5; 
+    line-height: 1.6;
+}
+h1, h2, h3 { 
+    font-family: Georgia, serif; 
+    color: #1B2A4A;
+}
+img { 
+    max-width: 100%; 
+    display: block;
+}
+.conteneur { 
+    width: 960px; 
+    max-width: 100%; 
+    margin: auto; /* c'est cette ligne qui centre le bloc */ 
+    padding: 20px;
+}
+/* ===== 2. En-tête ===== */
+.site-header { 
+    background-color: #1B2A4A/* TODO : bleu nuit */; 
+    color: #FFFFFF;
+}
+.site-header p {
+    color:#CCCCCC;
+    font-style: italic;
+}
+.entete { 
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+.logo { 
+    color: #FFFFFF; 
+    font-size: 34px;
+}
+.slogan { 
+    color: #1B2A4A; 
+    font-style: italic; 
+    font-size: 14px;
+}
+.nav a { 
+    color: #FFFFFF; 
+    text-decoration: none;
+    margin-left: 20px;
+}
+.nav a:hover{
+    color: #C0392B;
+    text-decoration: underline;
+}
+/* ===== 3. La une ===== */
+.une { 
+    margin-bottom: 40px;
+}
+.une img { 
+    width: 100%;
+    height: 340px; 
+    object-fit: cover; /* recadre la photo sans la déformer */
+}
+.une h2 { 
+    font-size: 32px;
+    margin-top: 16px;
+}
+.chapo { 
+   font-size: 18px;
+   color: #555555;
+   margin-top: 8px;
+}
+/* ===== 4. Les cartes ===== */
+.cartes { 
+    display: flex;
+    gap: 20px;
+}
+.carte { 
+    width: 33.33%; 
+    background-color: #FFFFFF; 
+    border: 1px, solid, #E0E0E0;
+    padding: 15px;
+}
+.carte img { 
+    width: 100%; 
+    height: 160px; 
+    object-fit: cover;
+}
+.carte h3 { 
+    font-size: 18px; 
+    margin: 12px 0 8px 0;
+}
+.date {
+    color: #888888;
+    font-size: 14px;
+    margin-top: 10px;
+}
+/* ===== 5. Pied de page ===== */
+.site-footer { 
+    background-color: #1B2A4A;
+    color: white;
+    margin-top: 40px;
+    text-align: center;
+}
+@media (max-width: 700px) {
+     .entete { 
+         flex-direction: column;
+         text-align: center;
+     } 
+     .cartes { 
+         flex-direction: column;
+     } 
+     .une img { 
+       height: 200px; 
+     } 
+     .nav a { 
+        margin: 0 10px; 
+     }
+}
+
+/* ===== 7. Page Contact ===== */
+.titre-page {
+    font-size: 28px;
+    margin-bottom: 25px;
+    /* TODO : trait rouge sous le titre (border-bottom 3px solid + rouge de la charte, padding-bottom 10px) */
+    border-bottom: 3px solid #C0392B;
+    padding-bottom: 10px;
+}
+
+.formulaire label {
+    /* TODO : chaque label sur sa propre ligne (display), 18px d'espace au-dessus, texte en gras (font-weight) */
+    display: block;
+    margin-top: 18px;
+    font-weight: bold;
+}
+
+.formulaire input,
+.formulaire select,
+.formulaire textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #CCCCCC;
+    font-family: Arial, sans-serif;
+}
+
+.case label {
+    display: inline;
+    /* le label de la case reste sur la même ligne */
+    font-weight: normal;
+}
+
+.case input {
+    width: auto;
+    /* sinon la case ferait 100% de large */
+}
+
+.bouton {
+    /* TODO : fond rouge de la charte, texte blanc, aucune bordure (border: none), padding 12px 22px, 20px d'espace au-dessus, font-size 16px, et cursor: pointer */
+    background-color: #C0392B;
+    color: #FFFFFF;
+    border: none;
+    padding: 12px 22px;
+    margin-top: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* TODO : au survol du bouton (.bouton:hover), un rouge plus sombre : #96281B */
+.bouton:hover {
+    background-color: #96281B;
+}
+
+.tarifs {
+    width: 100%;
+    border-collapse: collapse;
+    /* fusionne les bordures des cellules */
+    margin-top: 20px;
+}
+
+.tarifs th,
+.tarifs td {
+    /* TODO : bordure 1px solid #CCCCCC, padding 12px, texte aligné à gauche */
+    border: 1px solid #CCCCCC;
+    padding: 12px;
+    text-align: left;
+}
+
+.tarifs th {
+    /* TODO : fond bleu nuit, texte blanc */
+    background-color: #1B2A4A;
+    color: #FFFFFF;
+}
+
+/* ===== 8. Page Actualités ===== */
+.liste-articles { 
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.article-item { 
+    width: 48%;
+    background-color: white;
+    border:  1px, solid, #E0E0E0;
+    padding: 15px;
+}
+.article-item img { 
+    width: 100%; 
+    height: 180px; 
+    object-fit: cover; 
+    margin-bottom: 10px;
+}
+@media (max-width: 700px) { 
+    .article-item { 
+        flex-direction: column;
+    }
+}

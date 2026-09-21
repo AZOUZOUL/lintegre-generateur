@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>L'Intègre - Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/icone.png">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="conteneur entete">
+            <div class="marque">
+                <h1 class="logo">L'Intègre</h1>
+                <p class="slogan">L'information sans détour</p>
+            </div>
+            <nav class="nav">
+                <a href="index.html">Accueil</a>
+                <a href="actualites.html">Actualités</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main class="conteneur">
+        <h2 class="titre-page">Nous contacter</h2>
+    
+        <form class="formulaire" action="#" method="post">
+            <!-- MODÈLE : le premier champ est complet. Remarque bien : le for du label reprend l'id de l'input. -->
+            <label for="nom">Votre nom</label>
+            <input type="text" id="nom" name="nom" placeholder="Awa Traoré" required>
+    
+            <!-- TODO 1 : le champ email. Un label "Votre email" puis un input de type email, id et name valant "email", placeholder awa@exemple.com, et obligatoire (required). -->
+            <label for="email">Votre email</label>
+            <input type="email" id="email" name="email" placeholder="awa@exemple.com" required>
+    
+            <!-- TODO 2 : la liste déroulante "Motif du message". Un label, puis une balise select d'id et name "sujet", contenant 3 balises option : Demande d'information / Question sur un abonnement / Signaler une erreur dans un article -->
+            <label for="sujet">Motif du message</label>
+            <select id="sujet" name="sujet">
+                <option value="information">Demande d'information</option>
+                <option value="abonnement">Question sur un abonnement</option>
+                <option value="erreur">Signaler une erreur dans un article</option>
+            </select>
+    
+            <!-- TODO 3 : la zone de texte "Votre message". Un label, puis une balise textarea d'id et name "message", avec rows="6" et required. -->
+            <label for="message">Votre message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+    
+            <!-- TODO 4 : la case à cocher. Un p de classe "case" contenant un input de type checkbox (id et name "lettre") suivi de son label "Je souhaite recevoir la lettre hebdomadaire". -->
+            <p class="case">
+                <input type="checkbox" id="lettre" name="lettre">
+                <label for="lettre">Je souhaite recevoir la lettre hebdomadaire</label>
+            </p>
+    
+            <!-- TODO 5 : le bouton d'envoi. Une balise button de type submit et de classe "bouton", avec le texte "Envoyer le message". -->
+            <button type="submit" class="bouton">Envoyer le message</button>
+        </form>
+    
+        <h2 class="titre-page">Nos formules d'abonnement</h2>
+    
+        <table class="tarifs">
+            <caption>Tarifs valables jusqu'au 31 décembre 2026</caption>
+            <!-- MODÈLE : la ligne d'en-tête et la première formule. -->
+            <tr>
+                <th>Formule</th>
+                <th>Contenu</th>
+                <th>Prix par mois</th>
+            </tr>
+            <tr>
+                <td>Numérique</td>
+                <td>Tous les articles en ligne</td>
+                <td>3 000 FCFA</td>
+            </tr>
+            <!-- TODO 6 : la ligne Papier. Papier | Le journal livré chaque matin | 6 000 FCFA -->
+            <tr>
+                <td>Papier</td>
+                <td>Le journal livré chaque matin</td>
+                <td>6 000 FCFA</td>
+            </tr>
+            <!-- TODO 7 : la ligne Duo. Duo | Papier et numérique réunis | 7 500 FCFA -->
+            <tr>
+                <td>Duo</td>
+                <td>Papier et numérique réunis</td>
+                <td>7 500 FCFA</td>
+            </tr>
+        </table>
+    </main>
+    <footer class="site-footer">
+        <div class="conteneur">
+            <p> L'Intègre - Journal indépendant depuis 1998. </p>
+        </div>
+    </footer>
+</body>
+
+</html>
