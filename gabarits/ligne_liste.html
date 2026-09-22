@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr"> 
+    <head> 
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <title>{{titre_page}}</title> 
+        <link rel="stylesheet" href="{{prefixe}}style.css"> 
+    </head> 
+    <body> 
+        <header class="site-header"> 
+            <div class="conteneur entete"> 
+                <div class="marque"> 
+                    <h1 class="logo">L'Integre</h1> 
+                    <p class="slogan">L'information sans detour</p> 
+                </div> 
+                <nav class="nav"> 
+                    <a href="{{prefixe}}index.html">Accueil</a> 
+                    <a href="{{prefixe}}actualites.html">Actualites</a> 
+                    <a href="{{prefixe}}contact.html">Contact</a> 
+                </nav> 
+            </div> 
+        </header> 
+        <main class="conteneur"> 
+            <article class="article-item"> 
+                    <h3><a href="articles/{{fichier}}">{{image}}</a></h3>
+                    <h3><a href="articles/{{fichier}}">{{titre}}</a></h3>
+                    <p class="date">{{date}}-{{categorie}}</p>
+                    <p>{{chapo}}</p>
+            </article>
+        </main>
+        
+        <footer class="site-footer">
+             <div class="conteneur"> 
+                <p>L'Integre - Journal independant depuis 1998</p> 
+            </div> 
+        </footer> 
+    </body>
+</html>
