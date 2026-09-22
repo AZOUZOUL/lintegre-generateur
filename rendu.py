@@ -10,7 +10,7 @@ def remplir(gabarit, valeurs):
     for cle in valeurs:
         marqueur = "{{" + cle + "}}"
         resultat = resultat.replace(marqueur, str(valeurs[cle]))
-        return resultat
+    return resultat
 
 
 def charger_gabarit(nom):
@@ -19,7 +19,7 @@ def charger_gabarit(nom):
 
     with open(chemin_fichier, mode="r", encoding="utf-8") as fichier:
         return fichier.read()
-import os
+
 
 def ecrire_page(chemin, contenu_html):
     """Ecrit le contenu dans le fichier, en creant le dossier si besoin,
