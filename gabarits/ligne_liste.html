@@ -1,11 +1,16 @@
+<!-- Un article dans la liste de la page actualites -->
+<article class="article-item">
+    
+    <!-- 1. L'image -->
+    <img src="images/{{image}}" alt="{{titre}}">
+    
+    <!-- 2. Le titre cliquable en h3 vers articles/{{fichier}} -->
+    <h3><a href="articles/{{fichier}}">{{titre}}</a></h3>
+    
+    <!-- 3. La date suivie de la categorie dans un p de classe "date" -->
+    <p class="date">{{date}} — {{categorie}}</p>
+    
+    <!-- 4. Le chapo dans un p -->
+    <p class="chapo">{{chapo}}</p>
 
-        <main class="conteneur"> 
-            <article class="article-item"> 
-                    <h3><a href="articles/{{fichier}}">{{image}}</a></h3>
-                    <h3><a href="articles/{{fichier}}">{{titre}}</a></h3>
-                    <p class="date">{{date}}-{{categorie}}</p>
-                    <p>{{chapo}}</p>
-            </article>
-        </main>
-        
-       
+</article>
