@@ -1,5 +1,5 @@
 ## 🌐 Gestion des fichiers générés & Déploiement
-
+## Pour voir le site tape plutôt ça https://azouzoul.github.io/lintegre-generateur/site
 ### Faut-il committer les pages générées ?
 
 **En règle générale, NON.** Dans un projet de développement classique, on ne versionne jamais les fichiers produits automatiquement par un script (comme le contenu du dossier `site/`, de la même manière que pour `venv/` ou `__pycache__`). Ces fichiers polluent l'historique des modifications (*diffs*), créent des conflits de fusion (merge conflicts) absurdes entre collaborateurs, et peuvent être reconstruits en une seule commande.
